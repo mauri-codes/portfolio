@@ -24,9 +24,9 @@ const ActionButton = styled.div`
    font-weight: bold;
    cursor: pointer;
    &:hover {
-      background-color: hsla(48, 69%, 60%, 1);
+      background-color: hsla(51, 79%, 60%, 1);
    }
-   background-color: hsla(51, 79%, 60%, 1);
+   background-color: hsla(48, 69%, 50%, 1);
 `
 
 export default function Main() {

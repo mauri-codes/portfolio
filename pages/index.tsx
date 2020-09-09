@@ -7,14 +7,25 @@ const Container = styled.div`
    height: 100vh;
 `
 const Header = styled.div`
+   display: flex;
    height: 14vh;
    width: 100vw;
    position: fixed;
-   background-color: rgb(27,36,47);
+   align-items: center;
+   font-size: 20px;
+   color: white;
+   background-color: hsl(213, 27%, 15%);
+   padding-left: 50px;
+   >div{
+      margin: 30px;
+      cursor: pointer;
+      &:hover {
+         color: hsla(51, 79%, 60%, 1);
+      }
+   }
 `
 const Content = styled.div`
    padding-top: 14vh;
-   background-color: darkblue;
 `
 const Projects = styled.div`
    height: 86vh;
@@ -36,7 +47,12 @@ export default function Home() {
           href="//db.onlinewebfonts.com/c/0141df8c3436a6c3eb8be69855e1ec0d?family=Maiandra+GD"></link>
       </Head>
 
-      <Header />
+      <Header>
+         <div>HOME</div>
+         <div>PROJECTS</div>
+         <div>TALKS</div>
+         <div>MORE</div>
+      </Header>
       <Content>
          <Main />
          <Projects />
