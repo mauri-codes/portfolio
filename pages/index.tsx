@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Main from '../components/Main'
 import PageHeader from '../components/PageHeader'
 import HtmlHeader from '../components/HtmlHeader'
-import ProjectSection from '../components/ProjectSection'
+import ProjectSection from '../components/projects/ProjectSection'
 
 const Container = styled.div`
    width: 100%;
