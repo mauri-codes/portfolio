@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faEye} from '@fortawesome/free-solid-svg-icons'
 
 const Image = styled.div`
-   flex: 0 0 25vw;
-   margin-right: 100px;
-   margin-top: 100px;
+   flex: 0 0 30vw;
+   order: ${props => (props.reversed)?2:0};
+   margin-top: 50px;
    img {
       width: 100%;
       padding: 5%;
@@ -51,24 +51,24 @@ const AppButton = styled(LinkButton)`
    }
 `
 
-export default function ProjectImageSection({img, ...links}) {
+export default function ProjectImageSection({img, ...props}) {
    function redirect (newLink) {
       window.open(newLink, '_blank');
    }
    return (
-      <Image>
+      <Image reversed={props.reversed}>
          <div>
             <img src={`/${img}`} alt=""/>
          </div>
          <Links>
-            {links.app &&
-               <AppButton onClick={() => redirect(links.app)}>
+            {props.app &&
+               <AppButton onClick={() => redirect(props.app)}>
                   <ButtonIcon><FontAwesomeIcon icon={faEye} /></ButtonIcon>
                   <ButtonText>View App</ButtonText>
                </AppButton>
             }
-            {links.github &&
-               <GithubButton onClick={() => redirect(links.github)}>       
+            {props.github &&
+               <GithubButton onClick={() => redirect(props.github)}>       
                   <ButtonIcon><FontAwesomeIcon icon={faCode} /></ButtonIcon>
                   <ButtonText>View on Github</ButtonText>          
                </GithubButton>

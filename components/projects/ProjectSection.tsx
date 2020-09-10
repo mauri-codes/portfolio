@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import AwsJourney from './AwsJourney'
+import CodeDeploy from './CodeDeploy'
+import Portfolio from './Portfolio'
 
 const Projects = styled.div`
    height: 86vh;
@@ -14,6 +16,8 @@ export default function ProjectSection() {
          <h1>PROJECTS</h1>
          <hr/>
          <AwsJourney />
+         <CodeDeploy reversed />
+         <Portfolio />
       </Projects>
    )
 }
