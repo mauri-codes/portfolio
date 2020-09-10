@@ -9,11 +9,11 @@ const Projects = styled.div`
 `
 
 export default function ProjectSection() {
-    return (
-        <Projects >
-            <h1>PROJECTS</h1>
-            <hr/>
-            <AwsJourney />
-         </Projects>
-    )
+   return (
+      <Projects >
+         <h1>PROJECTS</h1>
+         <hr/>
+         <AwsJourney />
+      </Projects>
+   )
 }

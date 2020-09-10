@@ -52,29 +52,28 @@ const AppButton = styled(LinkButton)`
 `
 
 export default function ProjectImageSection({img, ...links}) {
-    function redirect (newLink) {
-       window.open(newLink, '_blank');
-    }
-    return (
-       <Image>
-          <div>
-             <img src={`/${img}`} alt=""/>
-          </div>
-          <Links>
-                {links.app &&
-                   <AppButton onClick={() => redirect(links.app)}>
-                      <ButtonIcon><FontAwesomeIcon icon={faEye} /></ButtonIcon>
-                      <ButtonText>View App</ButtonText>
-                   </AppButton>
-                }
-                {links.github &&
-                   <GithubButton onClick={() => redirect(links.github)}>       
-                      <ButtonIcon><FontAwesomeIcon icon={faCode} /></ButtonIcon>
-                      <ButtonText>View on Github</ButtonText>          
-                   </GithubButton>
-                }
-                
-          </Links>
-       </Image>
-    )
+   function redirect (newLink) {
+      window.open(newLink, '_blank');
+   }
+   return (
+      <Image>
+         <div>
+            <img src={`/${img}`} alt=""/>
+         </div>
+         <Links>
+            {links.app &&
+               <AppButton onClick={() => redirect(links.app)}>
+                  <ButtonIcon><FontAwesomeIcon icon={faEye} /></ButtonIcon>
+                  <ButtonText>View App</ButtonText>
+               </AppButton>
+            }
+            {links.github &&
+               <GithubButton onClick={() => redirect(links.github)}>       
+                  <ButtonIcon><FontAwesomeIcon icon={faCode} /></ButtonIcon>
+                  <ButtonText>View on Github</ButtonText>          
+               </GithubButton>
+            }
+         </Links>
+      </Image>
+   )
  }

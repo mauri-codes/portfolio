@@ -21,34 +21,32 @@ const Project = styled.div`
 
 export default function AwsJourney() {
     return (
-        <Project>
-            <ProjectImageSection
-               img='aws_journey.png'
-               github = 'http://www.github.com'
-               app = 'http://www.netflix.com'
-            />            
-            <ProjectContent>
-                <h2>AWS Journey</h2>
-                <div>
-                    <p>
-                        A learning platform that provides step by step labs and grades your
-                        work when you finish. It is a great tool for people learning AWS.
-                    </p>
-                    <p>
-                        This project is completely serverless and scalable.
-                    </p>
-                    <p>
-                        It is still a work in progress, but you can take a look.
-                    </p>
-                </div>
-
-               <TechnologiesSection
-                  backend={["lambda", "api", "cloudfront", "dynamo", "python"]}
-                  frontend={["react", "redux", "svg"]}
-                  infrastructure={["sqs", "cloudformation", "cognito"]}
-               />
-                
-            </ProjectContent>
-        </Project>
+      <Project>
+         <ProjectImageSection
+            img='aws_journey.png'
+            github = 'http://www.github.com'
+            app = 'http://www.netflix.com'
+         />            
+         <ProjectContent>
+            <h2>AWS Journey</h2>
+            <div>
+               <p>
+                  A learning platform that provides step by step labs and grades your
+                  work when you finish. It is a great tool for people learning AWS.
+               </p>
+               <p>
+                  This project is completely serverless and scalable.
+               </p>
+               <p>
+                  It is still a work in progress, but you can take a look.
+               </p>
+            </div>
+            <TechnologiesSection
+               backend={["lambda", "api", "cloudfront", "dynamo", "python"]}
+               frontend={["react", "redux", "svg"]}
+               infrastructure={["sqs", "cloudformation", "cognito"]}
+            />
+         </ProjectContent>
+      </Project>
     )
 }
