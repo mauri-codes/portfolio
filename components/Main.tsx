@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const MainView = styled.div`
    height: 86vh;
-   width: 100vw;
+   width: 100%;
    background-image: url('./background.png');
    display:flex;
    flex-direction: column;
