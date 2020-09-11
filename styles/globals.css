@@ -7,8 +7,9 @@ body {
 }
 
 a {
-  color: inherit;
+  color: rgb(212, 121, 23);
   text-decoration: none;
+  font-weight: bold;
 }
 
 * {

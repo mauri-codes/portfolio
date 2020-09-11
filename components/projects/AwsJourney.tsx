@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import ProjectImageSection from './ProjectImageSection'
 import TechnologiesSection from './TechnologiesSection'
 import { Project, ProjectContent } from './common'
@@ -17,7 +16,8 @@ export default function AwsJourney(props) {
             <div>
                <p>
                   A learning platform that provides step by step labs and grades your
-                  work when you finish. It is a great tool for people learning AWS.
+                  work when you finish. It is a great tool for people learning AWS. It is intended
+                  to eventually be a learning aid for the AWS Certifications.
                </p>
                <p>
                   This project is completely serverless and scalable.
