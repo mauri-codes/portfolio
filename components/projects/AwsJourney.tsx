@@ -15,7 +15,8 @@ export default function AwsJourney(props) {
          <ProjectContent>
             <h2>AWS Journey</h2>
             <div>
-               <p>m that provides step by step labs and grades your
+               <p>
+                  A learning platform that provides step by step labs and grades your
                   work when you finish. It is a great tool for people learning AWS.
                </p>
                <p>

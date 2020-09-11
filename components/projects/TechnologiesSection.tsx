@@ -14,6 +14,7 @@ const Tool = styled.div`
 `
 
 const ToolText = styled.div`
+   font-size: 18px;
    margin-left: 5px;
    flex: 1 0 0;
 `

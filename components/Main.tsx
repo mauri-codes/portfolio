@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 
 const MainView = styled.div`
    height: 86vh;
@@ -34,7 +35,9 @@ export default function Main() {
         <MainView>
             <div>Hello! my name is Mauricio</div>
             <div>I'm a Software Engineer</div>
-            <ActionButton>See My Work</ActionButton>
+            <Link href="#projects">
+                <ActionButton>See My Work</ActionButton>
+            </Link>
         </MainView>
     )
 }

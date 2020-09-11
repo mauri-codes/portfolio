@@ -6,7 +6,7 @@ import { Project, ProjectContent } from './common'
 
 export default function Portfolio(props) {
    return (
-      <Project key={"xml"}>
+      <Project>
          <ProjectImageSection
             img='portfolio.png'
             github = 'https://github.com/mauri1789/portfolio'

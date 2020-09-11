@@ -3,6 +3,7 @@ import AwsJourney from './AwsJourney'
 import CodeDeploy from './CodeDeploy'
 import Portfolio from './Portfolio'
 
+
 const Projects = styled.div`
    height: 86vh;
    width: 100%;
@@ -12,7 +13,7 @@ const Projects = styled.div`
 
 export default function ProjectSection() {
    return (
-      <Projects >
+      <Projects id="projects">
          <h1>PROJECTS</h1>
          <hr/>
          <AwsJourney />

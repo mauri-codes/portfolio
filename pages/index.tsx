@@ -27,7 +27,7 @@ const Content = styled.div`
 export default function Home() {
 
   return (
-    <Container>
+    <Container id="home">
       <HtmlHeader />
       <PageHeader />
       <Content>

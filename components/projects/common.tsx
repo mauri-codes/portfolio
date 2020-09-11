@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const ProjectContent = styled.div`
    flex: 0 0 50vw;
    padding-left: 20px;
-   font-size: 22px;
+   font-size: 20px;
    h2 {
       font-size: 30px;
    }
