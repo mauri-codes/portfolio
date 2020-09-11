@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faEye} from '@fortawesome/free-solid-svg-icons'
+import { main_yellow, secondary_yellow, main_blue, secondary_blue } from '../common'
 
 const Image = styled.div`
    flex: 0 0 30vw;
@@ -28,9 +29,9 @@ const LinkButton = styled.div`
 `
 
 const GithubButton = styled(LinkButton)`
-   background-color: lightskyblue;
+   background-color: ${main_blue};
    &:hover {
-      background-color: lightblue;
+      background-color: ${secondary_blue};
    }
 
 `
@@ -45,15 +46,15 @@ const ButtonText = styled.div`
 `
 
 const AppButton = styled(LinkButton)`
-   background-color: hsla(51, 79%, 60%, 1);
+   background-color: ${main_yellow};
    &:hover {
-      background-color: hsla(51, 69%, 60%, 1);
+      background-color: ${secondary_yellow};
    }
 `
 
 export default function ProjectImageSection({img, ...props}) {
-   function redirect (newLink) {
-      window.open(newLink, '_blank');
+   function redirect (link) {
+      window.open(link, '_blank');
    }
    return (
       <Image reversed={props.reversed}>

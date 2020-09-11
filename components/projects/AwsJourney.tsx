@@ -29,7 +29,7 @@ export default function AwsJourney(props) {
             <TechnologiesSection
                backend={["lambda", "api", "cloudfront", "dynamo", "python"]}
                frontend={["react", "redux", "svg"]}
-               infrastructure={["sqs", "cloudformation", "cognito"]}
+               infrastructure={["sqs", "cloudformation", "s3", "cognito"]}
             />
          </ProjectContent>
       </Project>
