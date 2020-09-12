@@ -4,6 +4,7 @@ import PageHeader from '../components/PageHeader'
 import HtmlHeader from '../components/HtmlHeader'
 import ProjectSection from '../components/projects/ProjectSection'
 import TalksSection from '../components/talks/TalksSection'
+import FooterComponent from '../components/FooterComponent'
 
 const Container = styled.div`
    width: 100%;
@@ -24,7 +25,6 @@ const Content = styled.div`
    }
 `
 
-
 export default function Home() {
 
   return (
@@ -36,6 +36,7 @@ export default function Home() {
          <ProjectSection />
          <TalksSection />
       </Content>
+      <FooterComponent />
     </Container>
   )
 }

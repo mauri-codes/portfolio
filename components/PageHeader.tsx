@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import { main_color } from './common'
 
 const Header = styled.div`
 display: flex;
@@ -9,7 +10,7 @@ position: fixed;
 align-items: center;
 font-size: 18px;
 color: white;
-background-color: hsl(213, 27%, 15%);
+background-color: ${main_color};
 padding-left: 50px;
 >div{
    margin: 30px;
@@ -25,11 +26,15 @@ export default function PageHeader() {
          <Link href="#home">
             <div>HOME</div>
          </Link>
+         <Link href="#home">
+            <div>ABOUT ME</div>
+         </Link>
          <Link href="#projects">
             <div>PROJECTS</div>
          </Link>
-        <div>TALKS</div>
-        <div>MORE</div>
+         <Link href="#talks">
+            <div>TALKS</div>
+         </Link>
     </Header>
     )
 }
