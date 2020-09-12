@@ -26,7 +26,7 @@ export default function PageHeader() {
          <Link href="#home">
             <div>HOME</div>
          </Link>
-         <Link href="#home">
+         <Link href="#aboutme">
             <div>ABOUT ME</div>
          </Link>
          <Link href="#projects">
