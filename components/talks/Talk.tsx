@@ -9,11 +9,18 @@ const Talk = styled.div`
     text-align: left;
     font-size: 16px;
     margin-bottom: 100px;
+`
+
+const TalkImage = styled.div`
+    display: flex;
+    align-items: center;
+    height: 300px;
     img {
-        height: 280px;
+        max-height: 300px;
         width: 100%;
     }
 `
+
 const TalkContents = styled.div`
     background-color: rgba(220,220,220, 0.15);
     padding: 0 20px;;
@@ -94,7 +101,9 @@ export default function TalkComponent({title, details, txt, img, links}: TalkCom
                 <TalkText>
                     {txt}
                 </TalkText>
-                <img src={`/${img}`} alt=""/>
+                <TalkImage>
+                    <img src={`/${img}`} alt=""/>
+                </TalkImage>
                 <TalkLinks>
                     {links.slides &&
                         <LinkButton button="slides" onClick={() => redirect(links.slides)}>Slides</LinkButton>
