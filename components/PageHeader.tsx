@@ -3,22 +3,22 @@ import Link from 'next/link'
 import { main_color } from './common'
 
 const Header = styled.div`
-display: flex;
-height: 14vh;
-width: 100vw;
-position: fixed;
-align-items: center;
-font-size: 18px;
-color: white;
-background-color: ${main_color};
-padding-left: 50px;
->div{
-   margin: 30px;
-   cursor: pointer;
-   &:hover {
-      color: hsla(51, 79%, 60%, 1);
+   display: flex;
+   height: 14vh;
+   width: 100vw;
+   position: fixed;
+   align-items: center;
+   font-size: 18px;
+   color: white;
+   background-color: ${main_color};
+   padding-left: 50px;
+   >div{
+      margin: 30px;
+      cursor: pointer;
+      &:hover {
+         color: hsla(51, 79%, 60%, 1);
+      }
    }
-}
 `
 export default function PageHeader() {
     return (

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const ProjectContent = styled.div`
-   flex: 0 0 50vw;
-   padding-left: 20px;
+   flex: 5 0 400px;
+   padding: 1% 5%;
    font-size: 20px;
    h2 {
       font-size: 30px;

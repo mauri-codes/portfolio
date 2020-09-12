@@ -4,12 +4,12 @@ import { faCode, faEye} from '@fortawesome/free-solid-svg-icons'
 import { main_yellow, secondary_yellow, main_blue, secondary_blue } from '../common'
 
 const Image = styled.div`
-   flex: 0 0 30vw;
+   flex: 2 0 200px;
    order: ${props => (props.reversed)?2:0};
+   padding: 1% 5%;
    margin-top: 50px;
    img {
       width: 100%;
-      padding: 5%;
    }
 `
 
