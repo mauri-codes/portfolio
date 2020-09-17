@@ -7,8 +7,8 @@ export default function AwsJourney(props) {
       <Project key={"xml"}>
          <ProjectImageSection
             img='aws_journey.png'
-            github = 'http://www.github.com'
-            app = 'http://www.netflix.com'
+            github = 'https://github.com/mauri1789/aws-journey'
+            app = 'https://mauridev.net/lab/S3/S3_static_website'
             reversed = {props.reversed}
          />            
          <ProjectContent>
